@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.tubb.cityindex"
@@ -10,6 +10,22 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+    }
+    // 签名
+    signingConfigs {
+        myConfig {
+            storeFile file("tubb.jks")
+            storePassword "123456"
+            keyAlias "tubb"
+            keyPassword "123456"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
     productFlavors {
         channel {
@@ -28,6 +44,9 @@ def channels() {
             if(!line.startsWith("//")){ //剔除注释行
                 android.buildTypes.create(line, {
                     manifestPlaceholders = [ channel:line ]
+                    signingConfig android.buildTypes.release.signingConfig
+                    minifyEnabled android.buildTypes.release.minifyEnabled
+                    proguardFiles android.buildTypes.release.proguardFiles
                 })
             }
         }
