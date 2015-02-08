@@ -50,7 +50,7 @@ public class CitySelectorActivity extends Activity{
         city8.setId("b");
         city8.setName("北海道");
         City city9 = new City();
-        city9.setId("贝多丝");
+        city9.setId("s");
         city9.setName("上海");
         City city10 = new City();
         city10.setId("c");

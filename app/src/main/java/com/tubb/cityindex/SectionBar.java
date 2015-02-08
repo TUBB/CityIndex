@@ -73,8 +73,13 @@ public class SectionBar extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         heightCenter = getMeasuredHeight()/2 - preHeight*WORDS.length/2;
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
         for (int i = 0; i < WORDS.length; i++) {
             canvas.drawText(String.valueOf(WORDS[i]), getMeasuredWidth()/2, preHeight
                     + (i * preHeight) + heightCenter, mPaint);
