@@ -9,11 +9,12 @@
     <facet type="android" name="Android">
       <configuration>
         <option name="SELECTED_BUILD_VARIANT" value="channelDebug" />
+        <option name="SELECTED_TEST_ARTIFACT" value="_android_test_" />
         <option name="ASSEMBLE_TASK_NAME" value="assembleChannelDebug" />
         <option name="COMPILE_JAVA_TASK_NAME" value="compileChannelDebugSources" />
-        <option name="ASSEMBLE_TEST_TASK_NAME" value="assembleChannelDebugTest" />
+        <option name="ASSEMBLE_TEST_TASK_NAME" value="assembleChannelDebugAndroidTest" />
         <option name="SOURCE_GEN_TASK_NAME" value="generateChannelDebugSources" />
-        <option name="TEST_SOURCE_GEN_TASK_NAME" value="generateChannelDebugTestSources" />
+        <option name="TEST_SOURCE_GEN_TASK_NAME" value="generateChannelDebugAndroidTestSources" />
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
@@ -24,6 +25,7 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/intermediates/classes/channel/debug" />
+    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/androidTest/channel/debug" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/channel/debug" isTestSource="false" generated="true" />
@@ -39,12 +41,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/channelDebug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/channelDebug/jni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/channelDebug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/test/channel/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/test/channel/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/test/channel/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/test/channel/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/test/channel/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/generated/test/channel/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/channel/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/channel/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/channel/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/channel/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/channel/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/generated/androidTest/channel/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/channel/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/channel/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/channel/assets" type="java-resource" />
@@ -100,7 +102,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
