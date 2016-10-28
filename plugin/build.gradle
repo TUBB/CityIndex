@@ -1,0 +1,10 @@
+apply plugin: 'groovy'
+
+dependencies {
+    compile gradleApi()//gradle sdk
+    compile localGroovy()//groovy sdk
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

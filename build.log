@@ -1,0 +1,511 @@
+Incremental java compilation is an incubating feature.
+disable task assembleAndroidTest by AppChannelPlugin
+disable task assembleBaiduDebug by AppChannelPlugin
+disable task assembleBaiduDebugAndroidTest by AppChannelPlugin
+disable task assembleBaiduDebugUnitTest by AppChannelPlugin
+disable task assembleBaiduReleaseUnitTest by AppChannelPlugin
+disable task assembleDebug by AppChannelPlugin
+disable task assembleDevelopDebug by AppChannelPlugin
+disable task assembleDevelopDebugAndroidTest by AppChannelPlugin
+disable task assembleDevelopDebugUnitTest by AppChannelPlugin
+disable task assembleDevelopReleaseUnitTest by AppChannelPlugin
+disable task assembleM360Debug by AppChannelPlugin
+disable task assembleM360DebugAndroidTest by AppChannelPlugin
+disable task assembleM360DebugUnitTest by AppChannelPlugin
+disable task assembleM360ReleaseUnitTest by AppChannelPlugin
+disable task checkBaiduDebugManifest by AppChannelPlugin
+disable task checkDevelopDebugManifest by AppChannelPlugin
+disable task checkM360DebugManifest by AppChannelPlugin
+disable task compileBaiduDebugAidl by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestAidl by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestJavaWithJavac by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestNdk by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestRenderscript by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestShaders by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestSources by AppChannelPlugin
+disable task compileBaiduDebugJavaWithJavac by AppChannelPlugin
+disable task compileBaiduDebugNdk by AppChannelPlugin
+disable task compileBaiduDebugRenderscript by AppChannelPlugin
+disable task compileBaiduDebugShaders by AppChannelPlugin
+disable task compileBaiduDebugSources by AppChannelPlugin
+disable task compileBaiduDebugUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileBaiduDebugUnitTestSources by AppChannelPlugin
+disable task compileBaiduReleaseUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileBaiduReleaseUnitTestSources by AppChannelPlugin
+disable task compileDevelopDebugAidl by AppChannelPlugin
+disable task compileDevelopDebugAndroidTestAidl by AppChannelPlugin
+disable task compileDevelopDebugAndroidTestJavaWithJavac by AppChannelPlugin
+disable task compileDevelopDebugAndroidTestNdk by AppChannelPlugin
+disable task compileDevelopDebugAndroidTestRenderscript by AppChannelPlugin
+disable task compileDevelopDebugAndroidTestShaders by AppChannelPlugin
+disable task compileDevelopDebugAndroidTestSources by AppChannelPlugin
+disable task compileDevelopDebugJavaWithJavac by AppChannelPlugin
+disable task compileDevelopDebugNdk by AppChannelPlugin
+disable task compileDevelopDebugRenderscript by AppChannelPlugin
+disable task compileDevelopDebugShaders by AppChannelPlugin
+disable task compileDevelopDebugSources by AppChannelPlugin
+disable task compileDevelopDebugUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileDevelopDebugUnitTestSources by AppChannelPlugin
+disable task compileDevelopReleaseUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileDevelopReleaseUnitTestSources by AppChannelPlugin
+disable task compileLint by AppChannelPlugin
+disable task compileM360DebugAidl by AppChannelPlugin
+disable task compileM360DebugAndroidTestAidl by AppChannelPlugin
+disable task compileM360DebugAndroidTestJavaWithJavac by AppChannelPlugin
+disable task compileM360DebugAndroidTestNdk by AppChannelPlugin
+disable task compileM360DebugAndroidTestRenderscript by AppChannelPlugin
+disable task compileM360DebugAndroidTestShaders by AppChannelPlugin
+disable task compileM360DebugAndroidTestSources by AppChannelPlugin
+disable task compileM360DebugJavaWithJavac by AppChannelPlugin
+disable task compileM360DebugNdk by AppChannelPlugin
+disable task compileM360DebugRenderscript by AppChannelPlugin
+disable task compileM360DebugShaders by AppChannelPlugin
+disable task compileM360DebugSources by AppChannelPlugin
+disable task compileM360DebugUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileM360DebugUnitTestSources by AppChannelPlugin
+disable task compileM360ReleaseUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileM360ReleaseUnitTestSources by AppChannelPlugin
+disable task connectedAndroidTest by AppChannelPlugin
+disable task connectedBaiduDebugAndroidTest by AppChannelPlugin
+disable task connectedDevelopDebugAndroidTest by AppChannelPlugin
+disable task connectedM360DebugAndroidTest by AppChannelPlugin
+disable task deviceAndroidTest by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestAssets by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestBuildConfig by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestResValues by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestResources by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestSources by AppChannelPlugin
+disable task generateBaiduDebugAssets by AppChannelPlugin
+disable task generateBaiduDebugBuildConfig by AppChannelPlugin
+disable task generateBaiduDebugResValues by AppChannelPlugin
+disable task generateBaiduDebugResources by AppChannelPlugin
+disable task generateBaiduDebugSources by AppChannelPlugin
+disable task generateDevelopDebugAndroidTestAssets by AppChannelPlugin
+disable task generateDevelopDebugAndroidTestBuildConfig by AppChannelPlugin
+disable task generateDevelopDebugAndroidTestResValues by AppChannelPlugin
+disable task generateDevelopDebugAndroidTestResources by AppChannelPlugin
+disable task generateDevelopDebugAndroidTestSources by AppChannelPlugin
+disable task generateDevelopDebugAssets by AppChannelPlugin
+disable task generateDevelopDebugBuildConfig by AppChannelPlugin
+disable task generateDevelopDebugResValues by AppChannelPlugin
+disable task generateDevelopDebugResources by AppChannelPlugin
+disable task generateDevelopDebugSources by AppChannelPlugin
+disable task generateM360DebugAndroidTestAssets by AppChannelPlugin
+disable task generateM360DebugAndroidTestBuildConfig by AppChannelPlugin
+disable task generateM360DebugAndroidTestResValues by AppChannelPlugin
+disable task generateM360DebugAndroidTestResources by AppChannelPlugin
+disable task generateM360DebugAndroidTestSources by AppChannelPlugin
+disable task generateM360DebugAssets by AppChannelPlugin
+disable task generateM360DebugBuildConfig by AppChannelPlugin
+disable task generateM360DebugResValues by AppChannelPlugin
+disable task generateM360DebugResources by AppChannelPlugin
+disable task generateM360DebugSources by AppChannelPlugin
+disable task incrementalBaiduDebugAndroidTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalBaiduDebugJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalBaiduDebugUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalBaiduReleaseUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalDevelopDebugAndroidTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalDevelopDebugJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalDevelopDebugUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalDevelopReleaseUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360DebugAndroidTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360DebugJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360DebugUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360ReleaseUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task installBaiduDebug by AppChannelPlugin
+disable task installBaiduDebugAndroidTest by AppChannelPlugin
+disable task installDevelopDebug by AppChannelPlugin
+disable task installDevelopDebugAndroidTest by AppChannelPlugin
+disable task installM360Debug by AppChannelPlugin
+disable task installM360DebugAndroidTest by AppChannelPlugin
+disable task jarBaiduDebugClasses by AppChannelPlugin
+disable task jarDevelopDebugClasses by AppChannelPlugin
+disable task jarM360DebugClasses by AppChannelPlugin
+disable task lint by AppChannelPlugin
+disable task lintBaiduDebug by AppChannelPlugin
+disable task lintBaiduRelease by AppChannelPlugin
+disable task lintDevelopDebug by AppChannelPlugin
+disable task lintDevelopRelease by AppChannelPlugin
+disable task lintM360Debug by AppChannelPlugin
+disable task lintM360Release by AppChannelPlugin
+disable task lintVitalBaiduRelease by AppChannelPlugin
+disable task lintVitalDevelopRelease by AppChannelPlugin
+disable task lintVitalM360Release by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestAssets by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestJniLibFolders by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestResources by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestShaders by AppChannelPlugin
+disable task mergeBaiduDebugAssets by AppChannelPlugin
+disable task mergeBaiduDebugJniLibFolders by AppChannelPlugin
+disable task mergeBaiduDebugResources by AppChannelPlugin
+disable task mergeBaiduDebugShaders by AppChannelPlugin
+disable task mergeDevelopDebugAndroidTestAssets by AppChannelPlugin
+disable task mergeDevelopDebugAndroidTestJniLibFolders by AppChannelPlugin
+disable task mergeDevelopDebugAndroidTestResources by AppChannelPlugin
+disable task mergeDevelopDebugAndroidTestShaders by AppChannelPlugin
+disable task mergeDevelopDebugAssets by AppChannelPlugin
+disable task mergeDevelopDebugJniLibFolders by AppChannelPlugin
+disable task mergeDevelopDebugResources by AppChannelPlugin
+disable task mergeDevelopDebugShaders by AppChannelPlugin
+disable task mergeM360DebugAndroidTestAssets by AppChannelPlugin
+disable task mergeM360DebugAndroidTestJniLibFolders by AppChannelPlugin
+disable task mergeM360DebugAndroidTestResources by AppChannelPlugin
+disable task mergeM360DebugAndroidTestShaders by AppChannelPlugin
+disable task mergeM360DebugAssets by AppChannelPlugin
+disable task mergeM360DebugJniLibFolders by AppChannelPlugin
+disable task mergeM360DebugResources by AppChannelPlugin
+disable task mergeM360DebugShaders by AppChannelPlugin
+disable task packageBaiduDebug by AppChannelPlugin
+disable task packageBaiduDebugAndroidTest by AppChannelPlugin
+disable task packageDevelopDebug by AppChannelPlugin
+disable task packageDevelopDebugAndroidTest by AppChannelPlugin
+disable task packageM360Debug by AppChannelPlugin
+disable task packageM360DebugAndroidTest by AppChannelPlugin
+disable task preBaiduDebugAndroidTestBuild by AppChannelPlugin
+disable task preBaiduDebugBuild by AppChannelPlugin
+disable task preBaiduDebugUnitTestBuild by AppChannelPlugin
+disable task preBaiduReleaseUnitTestBuild by AppChannelPlugin
+disable task preDevelopDebugAndroidTestBuild by AppChannelPlugin
+disable task preDevelopDebugBuild by AppChannelPlugin
+disable task preDevelopDebugUnitTestBuild by AppChannelPlugin
+disable task preDevelopReleaseUnitTestBuild by AppChannelPlugin
+disable task preM360DebugAndroidTestBuild by AppChannelPlugin
+disable task preM360DebugBuild by AppChannelPlugin
+disable task preM360DebugUnitTestBuild by AppChannelPlugin
+disable task preM360ReleaseUnitTestBuild by AppChannelPlugin
+disable task prepareBaiduDebugAndroidTestDependencies by AppChannelPlugin
+disable task prepareBaiduDebugDependencies by AppChannelPlugin
+disable task prepareBaiduDebugUnitTestDependencies by AppChannelPlugin
+disable task prepareBaiduReleaseUnitTestDependencies by AppChannelPlugin
+disable task prepareDevelopDebugAndroidTestDependencies by AppChannelPlugin
+disable task prepareDevelopDebugDependencies by AppChannelPlugin
+disable task prepareDevelopDebugUnitTestDependencies by AppChannelPlugin
+disable task prepareDevelopReleaseUnitTestDependencies by AppChannelPlugin
+disable task prepareM360DebugAndroidTestDependencies by AppChannelPlugin
+disable task prepareM360DebugDependencies by AppChannelPlugin
+disable task prepareM360DebugUnitTestDependencies by AppChannelPlugin
+disable task prepareM360ReleaseUnitTestDependencies by AppChannelPlugin
+disable task processBaiduDebugAndroidTestJavaRes by AppChannelPlugin
+disable task processBaiduDebugAndroidTestManifest by AppChannelPlugin
+disable task processBaiduDebugAndroidTestResources by AppChannelPlugin
+disable task processBaiduDebugJavaRes by AppChannelPlugin
+disable task processBaiduDebugManifest by AppChannelPlugin
+disable task processBaiduDebugResources by AppChannelPlugin
+disable task processBaiduDebugUnitTestJavaRes by AppChannelPlugin
+disable task processBaiduReleaseUnitTestJavaRes by AppChannelPlugin
+disable task processDevelopDebugAndroidTestJavaRes by AppChannelPlugin
+disable task processDevelopDebugAndroidTestManifest by AppChannelPlugin
+disable task processDevelopDebugAndroidTestResources by AppChannelPlugin
+disable task processDevelopDebugJavaRes by AppChannelPlugin
+disable task processDevelopDebugManifest by AppChannelPlugin
+disable task processDevelopDebugResources by AppChannelPlugin
+disable task processDevelopDebugUnitTestJavaRes by AppChannelPlugin
+disable task processDevelopReleaseUnitTestJavaRes by AppChannelPlugin
+disable task processM360DebugAndroidTestJavaRes by AppChannelPlugin
+disable task processM360DebugAndroidTestManifest by AppChannelPlugin
+disable task processM360DebugAndroidTestResources by AppChannelPlugin
+disable task processM360DebugJavaRes by AppChannelPlugin
+disable task processM360DebugManifest by AppChannelPlugin
+disable task processM360DebugResources by AppChannelPlugin
+disable task processM360DebugUnitTestJavaRes by AppChannelPlugin
+disable task processM360ReleaseUnitTestJavaRes by AppChannelPlugin
+disable task testBaiduDebugUnitTest by AppChannelPlugin
+disable task testBaiduReleaseUnitTest by AppChannelPlugin
+disable task testDevelopDebugUnitTest by AppChannelPlugin
+disable task testDevelopReleaseUnitTest by AppChannelPlugin
+disable task testM360DebugUnitTest by AppChannelPlugin
+disable task testM360ReleaseUnitTest by AppChannelPlugin
+disable task transformClassesWithDexForBaiduDebug by AppChannelPlugin
+disable task transformClassesWithDexForBaiduDebugAndroidTest by AppChannelPlugin
+disable task transformClassesWithDexForDevelopDebug by AppChannelPlugin
+disable task transformClassesWithDexForDevelopDebugAndroidTest by AppChannelPlugin
+disable task transformClassesWithDexForM360Debug by AppChannelPlugin
+disable task transformClassesWithDexForM360DebugAndroidTest by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForBaiduDebug by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForBaiduDebugAndroidTest by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForDevelopDebug by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForDevelopDebugAndroidTest by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForM360Debug by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForM360DebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduDebug by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduDebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduDebugUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduReleaseUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForDevelopDebug by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForDevelopDebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForDevelopDebugUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForDevelopReleaseUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360Debug by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360DebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360DebugUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360ReleaseUnitTest by AppChannelPlugin
+disable task uninstallBaiduDebug by AppChannelPlugin
+disable task uninstallBaiduDebugAndroidTest by AppChannelPlugin
+disable task uninstallDevelopDebug by AppChannelPlugin
+disable task uninstallDevelopDebugAndroidTest by AppChannelPlugin
+disable task uninstallM360Debug by AppChannelPlugin
+disable task uninstallM360DebugAndroidTest by AppChannelPlugin
+disable task validateSigningBaiduDebug by AppChannelPlugin
+disable task validateSigningBaiduDebugAndroidTest by AppChannelPlugin
+disable task validateSigningDevelopDebug by AppChannelPlugin
+disable task validateSigningDevelopDebugAndroidTest by AppChannelPlugin
+disable task validateSigningM360Debug by AppChannelPlugin
+disable task validateSigningM360DebugAndroidTest by AppChannelPlugin
+:app:preBuild UP-TO-DATE
+:app:preBaiduDebugBuild SKIPPED
+:app:checkBaiduDebugManifest SKIPPED
+:app:extractProguardFiles
+:app:preBaiduReleaseBuild
+:app:preDevelopDebugBuild SKIPPED
+:app:preDevelopReleaseBuild
+:app:preM360DebugBuild SKIPPED
+:app:preM360ReleaseBuild
+:app:prepareComAndroidSupportAnimatedVectorDrawable2500Library UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCompat2500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUi2500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUtils2500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportFragment2500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportMediaCompat2500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42500Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportVectorDrawable2500Library UP-TO-DATE
+:app:prepareBaiduDebugDependencies SKIPPED
+:app:compileBaiduDebugAidl SKIPPED
+:app:compileBaiduDebugRenderscript SKIPPED
+:app:generateBaiduDebugBuildConfig SKIPPED
+:app:generateBaiduDebugResValues SKIPPED
+:app:generateBaiduDebugResources SKIPPED
+:app:mergeBaiduDebugResources SKIPPED
+:app:processBaiduDebugManifest SKIPPED
+:app:processBaiduDebugResources SKIPPED
+:app:generateBaiduDebugSources SKIPPED
+:app:incrementalBaiduDebugJavaCompilationSafeguard SKIPPED
+:app:compileBaiduDebugJavaWithJavac SKIPPED
+:app:compileBaiduDebugNdk SKIPPED
+:app:compileBaiduDebugSources SKIPPED
+:app:mergeBaiduDebugShaders SKIPPED
+:app:compileBaiduDebugShaders SKIPPED
+:app:generateBaiduDebugAssets SKIPPED
+:app:mergeBaiduDebugAssets SKIPPED
+:app:transformClassesWithDexForBaiduDebug SKIPPED
+:app:mergeBaiduDebugJniLibFolders SKIPPED
+:app:transformNative_libsWithMergeJniLibsForBaiduDebug SKIPPED
+:app:processBaiduDebugJavaRes SKIPPED
+:app:transformResourcesWithMergeJavaResForBaiduDebug SKIPPED
+:app:validateSigningBaiduDebug SKIPPED
+:app:packageBaiduDebug SKIPPED
+:app:assembleBaiduDebug SKIPPED
+:app:checkDevelopDebugManifest SKIPPED
+:app:prepareDevelopDebugDependencies SKIPPED
+:app:compileDevelopDebugAidl SKIPPED
+:app:compileDevelopDebugRenderscript SKIPPED
+:app:generateDevelopDebugBuildConfig SKIPPED
+:app:generateDevelopDebugResValues SKIPPED
+:app:generateDevelopDebugResources SKIPPED
+:app:mergeDevelopDebugResources SKIPPED
+:app:processDevelopDebugManifest SKIPPED
+:app:processDevelopDebugResources SKIPPED
+:app:generateDevelopDebugSources SKIPPED
+:app:incrementalDevelopDebugJavaCompilationSafeguard SKIPPED
+:app:compileDevelopDebugJavaWithJavac SKIPPED
+:app:compileDevelopDebugNdk SKIPPED
+:app:compileDevelopDebugSources SKIPPED
+:app:mergeDevelopDebugShaders SKIPPED
+:app:compileDevelopDebugShaders SKIPPED
+:app:generateDevelopDebugAssets SKIPPED
+:app:mergeDevelopDebugAssets SKIPPED
+:app:transformClassesWithDexForDevelopDebug SKIPPED
+:app:mergeDevelopDebugJniLibFolders SKIPPED
+:app:transformNative_libsWithMergeJniLibsForDevelopDebug SKIPPED
+:app:processDevelopDebugJavaRes SKIPPED
+:app:transformResourcesWithMergeJavaResForDevelopDebug SKIPPED
+:app:validateSigningDevelopDebug SKIPPED
+:app:packageDevelopDebug SKIPPED
+:app:assembleDevelopDebug SKIPPED
+:app:checkM360DebugManifest SKIPPED
+:app:prepareM360DebugDependencies SKIPPED
+:app:compileM360DebugAidl SKIPPED
+:app:compileM360DebugRenderscript SKIPPED
+:app:generateM360DebugBuildConfig SKIPPED
+:app:generateM360DebugResValues SKIPPED
+:app:generateM360DebugResources SKIPPED
+:app:mergeM360DebugResources SKIPPED
+:app:processM360DebugManifest SKIPPED
+:app:processM360DebugResources SKIPPED
+:app:generateM360DebugSources SKIPPED
+:app:incrementalM360DebugJavaCompilationSafeguard SKIPPED
+:app:compileM360DebugJavaWithJavac SKIPPED
+:app:compileM360DebugNdk SKIPPED
+:app:compileM360DebugSources SKIPPED
+:app:mergeM360DebugShaders SKIPPED
+:app:compileM360DebugShaders SKIPPED
+:app:generateM360DebugAssets SKIPPED
+:app:mergeM360DebugAssets SKIPPED
+:app:transformClassesWithDexForM360Debug SKIPPED
+:app:mergeM360DebugJniLibFolders SKIPPED
+:app:transformNative_libsWithMergeJniLibsForM360Debug SKIPPED
+:app:processM360DebugJavaRes SKIPPED
+:app:transformResourcesWithMergeJavaResForM360Debug SKIPPED
+:app:validateSigningM360Debug SKIPPED
+:app:packageM360Debug SKIPPED
+:app:assembleM360Debug SKIPPED
+:app:assembleDebug SKIPPED
+:app:checkBaiduReleaseManifest
+:app:prepareBaiduReleaseDependencies
+:app:compileBaiduReleaseAidl UP-TO-DATE
+:app:compileBaiduReleaseRenderscript UP-TO-DATE
+:app:generateBaiduReleaseBuildConfig UP-TO-DATE
+:app:generateBaiduReleaseResValues UP-TO-DATE
+:app:generateBaiduReleaseResources UP-TO-DATE
+:app:mergeBaiduReleaseResources UP-TO-DATE
+:app:processBaiduReleaseManifest UP-TO-DATE
+:app:processBaiduReleaseResources UP-TO-DATE
+:app:generateBaiduReleaseSources UP-TO-DATE
+:app:incrementalBaiduReleaseJavaCompilationSafeguard UP-TO-DATE
+:app:compileBaiduReleaseJavaWithJavac UP-TO-DATE
+:app:compileBaiduReleaseNdk UP-TO-DATE
+:app:compileBaiduReleaseSources UP-TO-DATE
+:app:lintVitalBaiduRelease SKIPPED
+:app:mergeBaiduReleaseShaders UP-TO-DATE
+:app:compileBaiduReleaseShaders UP-TO-DATE
+:app:generateBaiduReleaseAssets UP-TO-DATE
+:app:mergeBaiduReleaseAssets UP-TO-DATE
+:app:processBaiduReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForBaiduRelease UP-TO-DATE
+:app:transformClassesAndResourcesWithProguardForBaiduRelease UP-TO-DATE
+:app:transformClassesWithDexForBaiduRelease UP-TO-DATE
+:app:mergeBaiduReleaseJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForBaiduRelease UP-TO-DATE
+:app:validateSigningBaiduRelease
+:app:packageBaiduRelease UP-TO-DATE
+:app:assembleBaiduRelease UP-TO-DATE
+:app:checkDevelopReleaseManifest
+:app:prepareDevelopReleaseDependencies
+:app:compileDevelopReleaseAidl UP-TO-DATE
+:app:compileDevelopReleaseRenderscript UP-TO-DATE
+:app:generateDevelopReleaseBuildConfig UP-TO-DATE
+:app:generateDevelopReleaseResValues UP-TO-DATE
+:app:generateDevelopReleaseResources UP-TO-DATE
+:app:mergeDevelopReleaseResources UP-TO-DATE
+:app:processDevelopReleaseManifest UP-TO-DATE
+:app:processDevelopReleaseResources UP-TO-DATE
+:app:generateDevelopReleaseSources UP-TO-DATE
+:app:incrementalDevelopReleaseJavaCompilationSafeguard UP-TO-DATE
+:app:compileDevelopReleaseJavaWithJavac UP-TO-DATE
+:app:compileDevelopReleaseNdk UP-TO-DATE
+:app:compileDevelopReleaseSources UP-TO-DATE
+:app:lintVitalDevelopRelease SKIPPED
+:app:mergeDevelopReleaseShaders UP-TO-DATE
+:app:compileDevelopReleaseShaders UP-TO-DATE
+:app:generateDevelopReleaseAssets UP-TO-DATE
+:app:mergeDevelopReleaseAssets UP-TO-DATE
+:app:processDevelopReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDevelopRelease UP-TO-DATE
+:app:transformClassesAndResourcesWithProguardForDevelopRelease UP-TO-DATE
+:app:transformClassesWithDexForDevelopRelease UP-TO-DATE
+:app:mergeDevelopReleaseJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForDevelopRelease UP-TO-DATE
+:app:validateSigningDevelopRelease
+:app:packageDevelopRelease UP-TO-DATE
+:app:assembleDevelopRelease UP-TO-DATE
+:app:checkM360ReleaseManifest
+:app:prepareM360ReleaseDependencies
+:app:compileM360ReleaseAidl UP-TO-DATE
+:app:compileM360ReleaseRenderscript UP-TO-DATE
+:app:generateM360ReleaseBuildConfig UP-TO-DATE
+:app:generateM360ReleaseResValues UP-TO-DATE
+:app:generateM360ReleaseResources UP-TO-DATE
+:app:mergeM360ReleaseResources UP-TO-DATE
+:app:processM360ReleaseManifest UP-TO-DATE
+:app:processM360ReleaseResources UP-TO-DATE
+:app:generateM360ReleaseSources UP-TO-DATE
+:app:incrementalM360ReleaseJavaCompilationSafeguard UP-TO-DATE
+:app:compileM360ReleaseJavaWithJavac UP-TO-DATE
+:app:compileM360ReleaseNdk UP-TO-DATE
+:app:compileM360ReleaseSources UP-TO-DATE
+:app:lintVitalM360Release SKIPPED
+:app:mergeM360ReleaseShaders UP-TO-DATE
+:app:compileM360ReleaseShaders UP-TO-DATE
+:app:generateM360ReleaseAssets UP-TO-DATE
+:app:mergeM360ReleaseAssets UP-TO-DATE
+:app:processM360ReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForM360Release UP-TO-DATE
+:app:transformClassesAndResourcesWithProguardForM360Release UP-TO-DATE
+:app:transformClassesWithDexForM360Release UP-TO-DATE
+:app:mergeM360ReleaseJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForM360Release UP-TO-DATE
+:app:validateSigningM360Release
+:app:packageM360Release UP-TO-DATE
+:app:assembleM360Release UP-TO-DATE
+:app:assembleRelease UP-TO-DATE
+:app:assemble UP-TO-DATE
+:app:lint SKIPPED
+:app:incrementalBaiduDebugUnitTestJavaCompilationSafeguard SKIPPED
+:app:preBaiduDebugUnitTestBuild SKIPPED
+:app:prepareBaiduDebugUnitTestDependencies SKIPPED
+:app:compileBaiduDebugUnitTestJavaWithJavac SKIPPED
+:app:processBaiduDebugUnitTestJavaRes SKIPPED
+:app:compileBaiduDebugUnitTestSources SKIPPED
+:app:mockableAndroidJar UP-TO-DATE
+:app:assembleBaiduDebugUnitTest SKIPPED
+:app:testBaiduDebugUnitTest SKIPPED
+:app:incrementalBaiduReleaseUnitTestJavaCompilationSafeguard SKIPPED
+:app:preBaiduReleaseUnitTestBuild SKIPPED
+:app:prepareBaiduReleaseUnitTestDependencies SKIPPED
+:app:compileBaiduReleaseUnitTestJavaWithJavac SKIPPED
+:app:processBaiduReleaseUnitTestJavaRes SKIPPED
+:app:compileBaiduReleaseUnitTestSources SKIPPED
+:app:assembleBaiduReleaseUnitTest SKIPPED
+:app:testBaiduReleaseUnitTest SKIPPED
+:app:incrementalDevelopDebugUnitTestJavaCompilationSafeguard SKIPPED
+:app:preDevelopDebugUnitTestBuild SKIPPED
+:app:prepareDevelopDebugUnitTestDependencies SKIPPED
+:app:compileDevelopDebugUnitTestJavaWithJavac SKIPPED
+:app:processDevelopDebugUnitTestJavaRes SKIPPED
+:app:compileDevelopDebugUnitTestSources SKIPPED
+:app:assembleDevelopDebugUnitTest SKIPPED
+:app:testDevelopDebugUnitTest SKIPPED
+:app:incrementalDevelopReleaseUnitTestJavaCompilationSafeguard SKIPPED
+:app:preDevelopReleaseUnitTestBuild SKIPPED
+:app:prepareDevelopReleaseUnitTestDependencies SKIPPED
+:app:compileDevelopReleaseUnitTestJavaWithJavac SKIPPED
+:app:processDevelopReleaseUnitTestJavaRes SKIPPED
+:app:compileDevelopReleaseUnitTestSources SKIPPED
+:app:assembleDevelopReleaseUnitTest SKIPPED
+:app:testDevelopReleaseUnitTest SKIPPED
+:app:incrementalM360DebugUnitTestJavaCompilationSafeguard SKIPPED
+:app:preM360DebugUnitTestBuild SKIPPED
+:app:prepareM360DebugUnitTestDependencies SKIPPED
+:app:compileM360DebugUnitTestJavaWithJavac SKIPPED
+:app:processM360DebugUnitTestJavaRes SKIPPED
+:app:compileM360DebugUnitTestSources SKIPPED
+:app:assembleM360DebugUnitTest SKIPPED
+:app:testM360DebugUnitTest SKIPPED
+:app:incrementalM360ReleaseUnitTestJavaCompilationSafeguard SKIPPED
+:app:preM360ReleaseUnitTestBuild SKIPPED
+:app:prepareM360ReleaseUnitTestDependencies SKIPPED
+:app:compileM360ReleaseUnitTestJavaWithJavac SKIPPED
+:app:processM360ReleaseUnitTestJavaRes SKIPPED
+:app:compileM360ReleaseUnitTestSources SKIPPED
+:app:assembleM360ReleaseUnitTest SKIPPED
+:app:testM360ReleaseUnitTest SKIPPED
+:app:test UP-TO-DATE
+:app:check UP-TO-DATE
+:app:build UP-TO-DATE
+:plugin:compileJava UP-TO-DATE
+:plugin:compileGroovy UP-TO-DATE
+:plugin:processResources UP-TO-DATE
+:plugin:classes UP-TO-DATE
+:plugin:jar UP-TO-DATE
+:plugin:assemble UP-TO-DATE
+:plugin:compileTestJava UP-TO-DATE
+:plugin:compileTestGroovy UP-TO-DATE
+:plugin:processTestResources UP-TO-DATE
+:plugin:testClasses UP-TO-DATE
+:plugin:test UP-TO-DATE
+:plugin:check UP-TO-DATE
+:plugin:build UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 4.042 secs

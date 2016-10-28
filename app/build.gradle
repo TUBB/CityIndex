@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: AppChannelPlugin
 
 android {
     compileSdkVersion 25
@@ -37,37 +38,87 @@ android {
     }
 }
 
-def disableLintOrDebugBuild(){
-    def targetTasks = project.tasks.findAll{task ->
-        def taskName = task.name
-        taskName.contains("Debug") || taskName.contains("lint") || taskName.contains("Lint") || taskName.contains("Test")
-    }
-    targetTasks.each{
-        println"disable task    :   ${it.name}"
-        it.setEnabled false
-    }
-}
-
-if (project.hasProperty('channel')) {
-    project.afterEvaluate{
-        disableLintOrDebugBuild()
-    }
-
-    configure(android.productFlavors, {
-        // 渠道号配置文件路径
-        def path = "./build-types/channels.txt"
-        file(path).eachLine { line ->
-            if(!line.startsWith("//")){ //剔除注释行
-                android.productFlavors.create(line, {
-                    manifestPlaceholders = [ channel:line ]
-                    signingConfig android.buildTypes.release.signingConfig
-                })
-            }
+appchannel {
+    channelFilePath 'app/build-types/channels.txt'
+    customProductFlavor { name ->
+        return {
+            manifestPlaceholders = [ channel:name ]
+            signingConfig android.buildTypes.release.signingConfig
         }
-    })
+    }
+    clearBuild true
+    buildChannel(project)
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:25.0.0'
 }
+
+class AppChannelExtension{
+    /**
+     * channel config file path
+     */
+    String channelFilePath
+    /**
+     * custom productFlavor
+     */
+    Closure customProductFlavor
+    /**
+     * clear build
+     */
+    boolean clearBuild = true
+}
+
+public class AppChannelPlugin implements Plugin<Project>{
+
+    @Override
+    void apply(Project project) {
+        project.extensions.create('appchannel', AppChannelExtension)
+        project.ext {
+            buildChannel = this.&buildChannel
+        }
+        project.afterEvaluate { // tasks is already fine
+            boolean hasChannelProperty = project.hasProperty('channel')
+            boolean clearBuild = project['appchannel'].clearBuild
+            if (hasChannelProperty && clearBuild) {
+                if (clearBuild) {
+                    def targetTasks = project.tasks.findAll{task ->
+                        def taskName = task.name
+                        taskName.contains("Debug") || taskName.contains("lint") || taskName.contains("Lint") || taskName.contains("Test")
+                    }
+                    targetTasks.each{
+                        println "disable task ${it.name} by AppChannelPlugin"
+                        it.setEnabled false
+                    }
+                }
+            }
+        }
+    }
+
+    public void buildChannel(Project project){
+        def channelFilePath = project['appchannel'].channelFilePath
+        def customProductFlavor = project['appchannel'].customProductFlavor
+        File channelFile = new File(channelFilePath)
+        if (!channelFile.exists()) {
+            throw new IllegalArgumentException('channelFilePath is not a valid file path!')
+        }
+        if (customProductFlavor == null) {
+            throw new IllegalArgumentException('customProductFlavor cant not be null!')
+        }
+        boolean hasChannelProperty = project.hasProperty('channel')
+        if (hasChannelProperty) {
+            project.configure(project.android.productFlavors, {
+                channelFile.eachLine { name ->
+                    if(!name.startsWith("#")){
+                        project.android.productFlavors.create(name, customProductFlavor(name))
+                    }
+                }
+            })
+        }
+    }
+}
+
+
+
+
