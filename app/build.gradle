@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: AppChannelPlugin
+//apply plugin: AppChannelPlugin
 
 android {
     compileSdkVersion 25
@@ -9,8 +9,8 @@ android {
         applicationId "com.tubb.cityindex"
         minSdkVersion 10
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "4.0.0"
     }
     // 签名
     signingConfigs {
@@ -38,86 +38,131 @@ android {
     }
 }
 
-appchannel {
-    channelFilePath 'app/build-types/channels.txt'
-    customProductFlavor { name ->
-        return {
-            manifestPlaceholders = [ channel:name ]
-            signingConfig android.buildTypes.release.signingConfig
-        }
-    }
-    clearBuild true
-    buildChannel(project)
-}
+//appchannel {
+//    channelFilePath 'app/build-types/channels.txt'
+//    buildProductFlavor { name ->
+//        return {
+//            manifestPlaceholders = [ channel:name ]
+//            signingConfig android.buildTypes.release.signingConfig
+//        }
+//    }
+//    disableDebugTask true
+//    disableLintTask true
+//    disableTestTask true
+//    outputDir 'publish'
+//    buildOutputFileName { project, variant ->
+//        project.name + '-' + variant.flavorName + '-' + variant.buildType.name + '-' + variant.versionName + '.apk'
+//    }
+//    buildChannel(project)
+//}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:25.0.0'
 }
 
-class AppChannelExtension{
-    /**
-     * channel config file path
-     */
-    String channelFilePath
-    /**
-     * custom productFlavor
-     */
-    Closure customProductFlavor
-    /**
-     * clear build
-     */
-    boolean clearBuild = true
-}
-
-public class AppChannelPlugin implements Plugin<Project>{
-
-    @Override
-    void apply(Project project) {
-        project.extensions.create('appchannel', AppChannelExtension)
-        project.ext {
-            buildChannel = this.&buildChannel
-        }
-        project.afterEvaluate { // tasks is already fine
-            boolean hasChannelProperty = project.hasProperty('channel')
-            boolean clearBuild = project['appchannel'].clearBuild
-            if (hasChannelProperty && clearBuild) {
-                if (clearBuild) {
-                    def targetTasks = project.tasks.findAll{task ->
-                        def taskName = task.name
-                        taskName.contains("Debug") || taskName.contains("lint") || taskName.contains("Lint") || taskName.contains("Test")
-                    }
-                    targetTasks.each{
-                        println "disable task ${it.name} by AppChannelPlugin"
-                        it.setEnabled false
-                    }
-                }
-            }
-        }
-    }
-
-    public void buildChannel(Project project){
-        def channelFilePath = project['appchannel'].channelFilePath
-        def customProductFlavor = project['appchannel'].customProductFlavor
-        File channelFile = new File(channelFilePath)
-        if (!channelFile.exists()) {
-            throw new IllegalArgumentException('channelFilePath is not a valid file path!')
-        }
-        if (customProductFlavor == null) {
-            throw new IllegalArgumentException('customProductFlavor cant not be null!')
-        }
-        boolean hasChannelProperty = project.hasProperty('channel')
-        if (hasChannelProperty) {
-            project.configure(project.android.productFlavors, {
-                channelFile.eachLine { name ->
-                    if(!name.startsWith("#")){
-                        project.android.productFlavors.create(name, customProductFlavor(name))
-                    }
-                }
-            })
-        }
-    }
-}
+//class AppChannelExtension{
+//    /**
+//     * channel config file path
+//     */
+//    String channelFilePath
+//    /**
+//     * custom productFlavor
+//     */
+//    Closure buildProductFlavor
+//    /**
+//     * disable debug task
+//     */
+//    boolean disableDebugTask
+//    /**
+//     * disable lint task
+//     */
+//    boolean disableLintTask
+//    /**
+//     * disable test task
+//     */
+//    boolean disableTestTask
+//    /**
+//     * apk output dir
+//     */
+//    String outputDir
+//    /**
+//     * config apk file name
+//     */
+//    Closure buildOutputFileName
+//}
+//
+//public class AppChannelPlugin implements Plugin<Project>{
+//
+//    @Override
+//    void apply(Project project) {
+//        project.extensions.create('appchannel', AppChannelExtension)
+//        project.ext {
+//            buildChannel = this.&buildChannel
+//        }
+//        project.afterEvaluate { // tasks is already fine
+//            boolean hasChannelProperty = project.hasProperty('channel')
+//            boolean disableDebugTask = project['appchannel'].disableDebugTask
+//            boolean disableLintTask = project['appchannel'].disableLintTask
+//            boolean disableTestTask = project['appchannel'].disableTestTask
+//            if (hasChannelProperty) {
+//                def targetTasks = project.tasks.findAll{ task ->
+//                    def taskName = task.name
+//                    if (disableDebugTask && taskName.contains("Debug"))
+//                        return true
+//                    if (disableLintTask && (taskName.contains("lint") || taskName.contains("Lint")))
+//                        return true
+//                    if (disableTestTask && taskName.contains("Test"))
+//                        return true
+//                    return false
+//                }
+//                targetTasks.each{
+//                    println "disable task ${it.name} by AppChannelPlugin"
+//                    it.setEnabled false
+//                }
+//            }
+//            customOutput(project)
+//        }
+//    }
+//
+//    private void customOutput(Project project) {
+//        String outputDir = project['appchannel'].outputDir
+//        def buildOutputFileName = project['appchannel'].buildOutputFileName
+//        project.android.applicationVariants.all { variant ->
+//            variant.outputs.each { output ->
+//                def sourceFile = output.outputFile
+//                String targetDir = outputDir != null ? outputDir : sourceFile.parent
+//                String targetFileName = sourceFile.name
+//                if (buildOutputFileName != null) {
+//                    targetFileName = buildOutputFileName(project, variant)
+//                }
+//                output.outputFile = new File(targetDir, targetFileName)
+//            }
+//        }
+//    }
+//
+//    public void buildChannel(Project project) {
+//        def channelFilePath = project['appchannel'].channelFilePath
+//        def buildProductFlavor = project['appchannel'].buildProductFlavor
+//        File channelFile = new File(channelFilePath)
+//        if (channelFile.isDirectory() || !channelFile.exists()) {
+//            throw new IllegalArgumentException('channelFilePath is not a valid file path!')
+//        }
+//        if (buildProductFlavor == null) {
+//            throw new IllegalArgumentException('customProductFlavor cant not be null!')
+//        }
+//        boolean hasChannelProperty = project.hasProperty('channel')
+//        if (hasChannelProperty) {
+//            project.configure(project.android.productFlavors, {
+//                channelFile.eachLine { name ->
+//                    if(!name.startsWith("#")){
+//                        project.android.productFlavors.create(name, buildProductFlavor(name))
+//                    }
+//                }
+//            })
+//        }
+//    }
+//}
 
 
 
