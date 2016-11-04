@@ -1,13 +1,477 @@
+-----------[]
+===========baidu
+===========m360
 Incremental java compilation is an incubating feature.
+disable task assembleAndroidTest by AppChannelPlugin
+disable task assembleBaiduDebug by AppChannelPlugin
+disable task assembleBaiduDebugAndroidTest by AppChannelPlugin
+disable task assembleBaiduDebugUnitTest by AppChannelPlugin
+disable task assembleBaiduReleaseUnitTest by AppChannelPlugin
+disable task assembleDebug by AppChannelPlugin
+disable task assembleM360Debug by AppChannelPlugin
+disable task assembleM360DebugAndroidTest by AppChannelPlugin
+disable task assembleM360DebugUnitTest by AppChannelPlugin
+disable task assembleM360ReleaseUnitTest by AppChannelPlugin
+disable task checkBaiduDebugManifest by AppChannelPlugin
+disable task checkM360DebugManifest by AppChannelPlugin
+disable task compileBaiduDebugAidl by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestAidl by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestJavaWithJavac by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestNdk by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestRenderscript by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestShaders by AppChannelPlugin
+disable task compileBaiduDebugAndroidTestSources by AppChannelPlugin
+disable task compileBaiduDebugJavaWithJavac by AppChannelPlugin
+disable task compileBaiduDebugNdk by AppChannelPlugin
+disable task compileBaiduDebugRenderscript by AppChannelPlugin
+disable task compileBaiduDebugShaders by AppChannelPlugin
+disable task compileBaiduDebugSources by AppChannelPlugin
+disable task compileBaiduDebugUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileBaiduDebugUnitTestSources by AppChannelPlugin
+disable task compileBaiduReleaseUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileBaiduReleaseUnitTestSources by AppChannelPlugin
+disable task compileLint by AppChannelPlugin
+disable task compileM360DebugAidl by AppChannelPlugin
+disable task compileM360DebugAndroidTestAidl by AppChannelPlugin
+disable task compileM360DebugAndroidTestJavaWithJavac by AppChannelPlugin
+disable task compileM360DebugAndroidTestNdk by AppChannelPlugin
+disable task compileM360DebugAndroidTestRenderscript by AppChannelPlugin
+disable task compileM360DebugAndroidTestShaders by AppChannelPlugin
+disable task compileM360DebugAndroidTestSources by AppChannelPlugin
+disable task compileM360DebugJavaWithJavac by AppChannelPlugin
+disable task compileM360DebugNdk by AppChannelPlugin
+disable task compileM360DebugRenderscript by AppChannelPlugin
+disable task compileM360DebugShaders by AppChannelPlugin
+disable task compileM360DebugSources by AppChannelPlugin
+disable task compileM360DebugUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileM360DebugUnitTestSources by AppChannelPlugin
+disable task compileM360ReleaseUnitTestJavaWithJavac by AppChannelPlugin
+disable task compileM360ReleaseUnitTestSources by AppChannelPlugin
+disable task connectedAndroidTest by AppChannelPlugin
+disable task connectedBaiduDebugAndroidTest by AppChannelPlugin
+disable task connectedM360DebugAndroidTest by AppChannelPlugin
+disable task deviceAndroidTest by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestAssets by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestBuildConfig by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestResValues by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestResources by AppChannelPlugin
+disable task generateBaiduDebugAndroidTestSources by AppChannelPlugin
+disable task generateBaiduDebugAssets by AppChannelPlugin
+disable task generateBaiduDebugBuildConfig by AppChannelPlugin
+disable task generateBaiduDebugResValues by AppChannelPlugin
+disable task generateBaiduDebugResources by AppChannelPlugin
+disable task generateBaiduDebugSources by AppChannelPlugin
+disable task generateM360DebugAndroidTestAssets by AppChannelPlugin
+disable task generateM360DebugAndroidTestBuildConfig by AppChannelPlugin
+disable task generateM360DebugAndroidTestResValues by AppChannelPlugin
+disable task generateM360DebugAndroidTestResources by AppChannelPlugin
+disable task generateM360DebugAndroidTestSources by AppChannelPlugin
+disable task generateM360DebugAssets by AppChannelPlugin
+disable task generateM360DebugBuildConfig by AppChannelPlugin
+disable task generateM360DebugResValues by AppChannelPlugin
+disable task generateM360DebugResources by AppChannelPlugin
+disable task generateM360DebugSources by AppChannelPlugin
+disable task incrementalBaiduDebugAndroidTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalBaiduDebugJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalBaiduDebugUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalBaiduReleaseUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360DebugAndroidTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360DebugJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360DebugUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task incrementalM360ReleaseUnitTestJavaCompilationSafeguard by AppChannelPlugin
+disable task installBaiduDebug by AppChannelPlugin
+disable task installBaiduDebugAndroidTest by AppChannelPlugin
+disable task installM360Debug by AppChannelPlugin
+disable task installM360DebugAndroidTest by AppChannelPlugin
+disable task jarBaiduDebugClasses by AppChannelPlugin
+disable task jarM360DebugClasses by AppChannelPlugin
+disable task lint by AppChannelPlugin
+disable task lintBaiduDebug by AppChannelPlugin
+disable task lintBaiduRelease by AppChannelPlugin
+disable task lintM360Debug by AppChannelPlugin
+disable task lintM360Release by AppChannelPlugin
+disable task lintVitalBaiduRelease by AppChannelPlugin
+disable task lintVitalM360Release by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestAssets by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestJniLibFolders by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestResources by AppChannelPlugin
+disable task mergeBaiduDebugAndroidTestShaders by AppChannelPlugin
+disable task mergeBaiduDebugAssets by AppChannelPlugin
+disable task mergeBaiduDebugJniLibFolders by AppChannelPlugin
+disable task mergeBaiduDebugResources by AppChannelPlugin
+disable task mergeBaiduDebugShaders by AppChannelPlugin
+disable task mergeM360DebugAndroidTestAssets by AppChannelPlugin
+disable task mergeM360DebugAndroidTestJniLibFolders by AppChannelPlugin
+disable task mergeM360DebugAndroidTestResources by AppChannelPlugin
+disable task mergeM360DebugAndroidTestShaders by AppChannelPlugin
+disable task mergeM360DebugAssets by AppChannelPlugin
+disable task mergeM360DebugJniLibFolders by AppChannelPlugin
+disable task mergeM360DebugResources by AppChannelPlugin
+disable task mergeM360DebugShaders by AppChannelPlugin
+disable task packageBaiduDebug by AppChannelPlugin
+disable task packageBaiduDebugAndroidTest by AppChannelPlugin
+disable task packageM360Debug by AppChannelPlugin
+disable task packageM360DebugAndroidTest by AppChannelPlugin
+disable task preBaiduDebugAndroidTestBuild by AppChannelPlugin
+disable task preBaiduDebugBuild by AppChannelPlugin
+disable task preBaiduDebugUnitTestBuild by AppChannelPlugin
+disable task preBaiduReleaseUnitTestBuild by AppChannelPlugin
+disable task preM360DebugAndroidTestBuild by AppChannelPlugin
+disable task preM360DebugBuild by AppChannelPlugin
+disable task preM360DebugUnitTestBuild by AppChannelPlugin
+disable task preM360ReleaseUnitTestBuild by AppChannelPlugin
+disable task prepareBaiduDebugAndroidTestDependencies by AppChannelPlugin
+disable task prepareBaiduDebugDependencies by AppChannelPlugin
+disable task prepareBaiduDebugUnitTestDependencies by AppChannelPlugin
+disable task prepareBaiduReleaseUnitTestDependencies by AppChannelPlugin
+disable task prepareM360DebugAndroidTestDependencies by AppChannelPlugin
+disable task prepareM360DebugDependencies by AppChannelPlugin
+disable task prepareM360DebugUnitTestDependencies by AppChannelPlugin
+disable task prepareM360ReleaseUnitTestDependencies by AppChannelPlugin
+disable task processBaiduDebugAndroidTestJavaRes by AppChannelPlugin
+disable task processBaiduDebugAndroidTestManifest by AppChannelPlugin
+disable task processBaiduDebugAndroidTestResources by AppChannelPlugin
+disable task processBaiduDebugJavaRes by AppChannelPlugin
+disable task processBaiduDebugManifest by AppChannelPlugin
+disable task processBaiduDebugResources by AppChannelPlugin
+disable task processBaiduDebugUnitTestJavaRes by AppChannelPlugin
+disable task processBaiduReleaseUnitTestJavaRes by AppChannelPlugin
+disable task processM360DebugAndroidTestJavaRes by AppChannelPlugin
+disable task processM360DebugAndroidTestManifest by AppChannelPlugin
+disable task processM360DebugAndroidTestResources by AppChannelPlugin
+disable task processM360DebugJavaRes by AppChannelPlugin
+disable task processM360DebugManifest by AppChannelPlugin
+disable task processM360DebugResources by AppChannelPlugin
+disable task processM360DebugUnitTestJavaRes by AppChannelPlugin
+disable task processM360ReleaseUnitTestJavaRes by AppChannelPlugin
+disable task testBaiduDebugUnitTest by AppChannelPlugin
+disable task testBaiduReleaseUnitTest by AppChannelPlugin
+disable task testM360DebugUnitTest by AppChannelPlugin
+disable task testM360ReleaseUnitTest by AppChannelPlugin
+disable task transformClassesWithDexForBaiduDebug by AppChannelPlugin
+disable task transformClassesWithDexForBaiduDebugAndroidTest by AppChannelPlugin
+disable task transformClassesWithDexForM360Debug by AppChannelPlugin
+disable task transformClassesWithDexForM360DebugAndroidTest by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForBaiduDebug by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForBaiduDebugAndroidTest by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForM360Debug by AppChannelPlugin
+disable task transformNative_libsWithMergeJniLibsForM360DebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduDebug by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduDebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduDebugUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForBaiduReleaseUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360Debug by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360DebugAndroidTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360DebugUnitTest by AppChannelPlugin
+disable task transformResourcesWithMergeJavaResForM360ReleaseUnitTest by AppChannelPlugin
+disable task uninstallBaiduDebug by AppChannelPlugin
+disable task uninstallBaiduDebugAndroidTest by AppChannelPlugin
+disable task uninstallM360Debug by AppChannelPlugin
+disable task uninstallM360DebugAndroidTest by AppChannelPlugin
+disable task validateSigningBaiduDebug by AppChannelPlugin
+disable task validateSigningBaiduDebugAndroidTest by AppChannelPlugin
+disable task validateSigningM360Debug by AppChannelPlugin
+disable task validateSigningM360DebugAndroidTest by AppChannelPlugin
+:app:clean
 :plugin:clean
+:app:preBuild UP-TO-DATE
+:app:preBaiduDebugBuild SKIPPED
+:app:checkBaiduDebugManifest SKIPPED
+:app:extractProguardFiles
+:app:preBaiduReleaseBuild
+:app:preM360DebugBuild SKIPPED
+:app:preM360ReleaseBuild
+:app:prepareComAndroidSupportAnimatedVectorDrawable2500Library
+:app:prepareComAndroidSupportAppcompatV72500Library
+:app:prepareComAndroidSupportSupportCompat2500Library
+:app:prepareComAndroidSupportSupportCoreUi2500Library
+:app:prepareComAndroidSupportSupportCoreUtils2500Library
+:app:prepareComAndroidSupportSupportFragment2500Library
+:app:prepareComAndroidSupportSupportMediaCompat2500Library
+:app:prepareComAndroidSupportSupportV42500Library
+:app:prepareComAndroidSupportSupportVectorDrawable2500Library
+:app:prepareBaiduDebugDependencies SKIPPED
+:app:compileBaiduDebugAidl SKIPPED
+:app:compileBaiduDebugRenderscript SKIPPED
+:app:generateBaiduDebugBuildConfig SKIPPED
+:app:generateBaiduDebugResValues SKIPPED
+:app:generateBaiduDebugResources SKIPPED
+:app:mergeBaiduDebugResources SKIPPED
+:app:processBaiduDebugManifest SKIPPED
+:app:processBaiduDebugResources SKIPPED
+:app:generateBaiduDebugSources SKIPPED
+:app:incrementalBaiduDebugJavaCompilationSafeguard SKIPPED
+:app:compileBaiduDebugJavaWithJavac SKIPPED
+:app:compileBaiduDebugNdk SKIPPED
+:app:compileBaiduDebugSources SKIPPED
+:app:mergeBaiduDebugShaders SKIPPED
+:app:compileBaiduDebugShaders SKIPPED
+:app:generateBaiduDebugAssets SKIPPED
+:app:mergeBaiduDebugAssets SKIPPED
+:app:transformClassesWithDexForBaiduDebug SKIPPED
+:app:mergeBaiduDebugJniLibFolders SKIPPED
+:app:transformNative_libsWithMergeJniLibsForBaiduDebug SKIPPED
+:app:processBaiduDebugJavaRes SKIPPED
+:app:transformResourcesWithMergeJavaResForBaiduDebug SKIPPED
+:app:validateSigningBaiduDebug SKIPPED
+:app:packageBaiduDebug SKIPPED
+:app:assembleBaiduDebug SKIPPED
+:app:checkM360DebugManifest SKIPPED
+:app:prepareM360DebugDependencies SKIPPED
+:app:compileM360DebugAidl SKIPPED
+:app:compileM360DebugRenderscript SKIPPED
+:app:generateM360DebugBuildConfig SKIPPED
+:app:generateM360DebugResValues SKIPPED
+:app:generateM360DebugResources SKIPPED
+:app:mergeM360DebugResources SKIPPED
+:app:processM360DebugManifest SKIPPED
+:app:processM360DebugResources SKIPPED
+:app:generateM360DebugSources SKIPPED
+:app:incrementalM360DebugJavaCompilationSafeguard SKIPPED
+:app:compileM360DebugJavaWithJavac SKIPPED
+:app:compileM360DebugNdk SKIPPED
+:app:compileM360DebugSources SKIPPED
+:app:mergeM360DebugShaders SKIPPED
+:app:compileM360DebugShaders SKIPPED
+:app:generateM360DebugAssets SKIPPED
+:app:mergeM360DebugAssets SKIPPED
+:app:transformClassesWithDexForM360Debug SKIPPED
+:app:mergeM360DebugJniLibFolders SKIPPED
+:app:transformNative_libsWithMergeJniLibsForM360Debug SKIPPED
+:app:processM360DebugJavaRes SKIPPED
+:app:transformResourcesWithMergeJavaResForM360Debug SKIPPED
+:app:validateSigningM360Debug SKIPPED
+:app:packageM360Debug SKIPPED
+:app:assembleM360Debug SKIPPED
+:app:assembleDebug SKIPPED
+:app:checkBaiduReleaseManifest
+:app:prepareBaiduReleaseDependencies
+:app:compileBaiduReleaseAidl
+:app:compileBaiduReleaseRenderscript
+:app:generateBaiduReleaseBuildConfig
+:app:generateBaiduReleaseResValues
+:app:generateBaiduReleaseResources
+:app:mergeBaiduReleaseResources
+:app:processBaiduReleaseManifest
+:app:processBaiduReleaseResources
+:app:generateBaiduReleaseSources
+:app:incrementalBaiduReleaseJavaCompilationSafeguard
+:app:compileBaiduReleaseJavaWithJavac
+:app:compileBaiduReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileBaiduReleaseNdk UP-TO-DATE
+:app:compileBaiduReleaseSources
+:app:lintVitalBaiduRelease SKIPPED
+:app:mergeBaiduReleaseShaders
+:app:compileBaiduReleaseShaders
+:app:generateBaiduReleaseAssets
+:app:mergeBaiduReleaseAssets
+:app:processBaiduReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForBaiduRelease
+:app:transformClassesAndResourcesWithProguardForBaiduRelease
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar] (filtered)
+Reading program directory [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/classes/baidu/release] (filtered)
+Reading library jar [/Users/tubingbing/Library/Android/sdk/platforms/android-25/android.jar]
+Reading library jar [/Users/tubingbing/Library/Android/sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    970
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/Users/tubingbing/StudioProjects/CityIndex/app/build/outputs/mapping/baidu/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1635
+  Final number of program classes:    463
+Obfuscating...
+Printing mapping to [/Users/tubingbing/StudioProjects/CityIndex/app/build/outputs/mapping/baidu/release/mapping.txt]...
+Writing output...
+Preparing output jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/transforms/proguard/baidu/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program directory [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/classes/baidu/release] (filtered)
+Printing classes to [/Users/tubingbing/StudioProjects/CityIndex/app/build/outputs/mapping/baidu/release/dump.txt]...
+:app:transformClassesWithDexForBaiduRelease
+:app:mergeBaiduReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForBaiduRelease
+:app:validateSigningBaiduRelease
+:app:packageBaiduRelease
+:app:assembleBaiduRelease
+:app:checkM360ReleaseManifest
+:app:prepareM360ReleaseDependencies
+:app:compileM360ReleaseAidl
+:app:compileM360ReleaseRenderscript
+:app:generateM360ReleaseBuildConfig
+:app:generateM360ReleaseResValues
+:app:generateM360ReleaseResources
+:app:mergeM360ReleaseResources
+:app:processM360ReleaseManifest
+:app:processM360ReleaseResources
+:app:generateM360ReleaseSources
+:app:incrementalM360ReleaseJavaCompilationSafeguard
+:app:compileM360ReleaseJavaWithJavac
+:app:compileM360ReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileM360ReleaseNdk UP-TO-DATE
+:app:compileM360ReleaseSources
+:app:lintVitalM360Release SKIPPED
+:app:mergeM360ReleaseShaders
+:app:compileM360ReleaseShaders
+:app:generateM360ReleaseAssets
+:app:mergeM360ReleaseAssets
+:app:processM360ReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForM360Release
+:app:transformClassesAndResourcesWithProguardForM360Release
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar] (filtered)
+Reading program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar] (filtered)
+Reading program directory [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/classes/m360/release] (filtered)
+Reading library jar [/Users/tubingbing/Library/Android/sdk/platforms/android-25/android.jar]
+Reading library jar [/Users/tubingbing/Library/Android/sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    970
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/Users/tubingbing/StudioProjects/CityIndex/app/build/outputs/mapping/m360/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1635
+  Final number of program classes:    463
+Obfuscating...
+Printing mapping to [/Users/tubingbing/StudioProjects/CityIndex/app/build/outputs/mapping/m360/release/mapping.txt]...
+Writing output...
+Preparing output jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/transforms/proguard/m360/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar] (filtered)
+  Copying resources from program directory [/Users/tubingbing/StudioProjects/CityIndex/app/build/intermediates/classes/m360/release] (filtered)
+Printing classes to [/Users/tubingbing/StudioProjects/CityIndex/app/build/outputs/mapping/m360/release/dump.txt]...
+:app:transformClassesWithDexForM360Release
+:app:mergeM360ReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForM360Release
+:app:validateSigningM360Release
+:app:packageM360Release
+:app:assembleM360Release
+:app:assembleRelease
+:app:assemble
+:app:lint SKIPPED
+:app:incrementalBaiduDebugUnitTestJavaCompilationSafeguard SKIPPED
+:app:preBaiduDebugUnitTestBuild SKIPPED
+:app:prepareBaiduDebugUnitTestDependencies SKIPPED
+:app:compileBaiduDebugUnitTestJavaWithJavac SKIPPED
+:app:processBaiduDebugUnitTestJavaRes SKIPPED
+:app:compileBaiduDebugUnitTestSources SKIPPED
+:app:mockableAndroidJar UP-TO-DATE
+:app:assembleBaiduDebugUnitTest SKIPPED
+:app:testBaiduDebugUnitTest SKIPPED
+:app:incrementalBaiduReleaseUnitTestJavaCompilationSafeguard SKIPPED
+:app:preBaiduReleaseUnitTestBuild SKIPPED
+:app:prepareBaiduReleaseUnitTestDependencies SKIPPED
+:app:compileBaiduReleaseUnitTestJavaWithJavac SKIPPED
+:app:processBaiduReleaseUnitTestJavaRes SKIPPED
+:app:compileBaiduReleaseUnitTestSources SKIPPED
+:app:assembleBaiduReleaseUnitTest SKIPPED
+:app:testBaiduReleaseUnitTest SKIPPED
+:app:incrementalM360DebugUnitTestJavaCompilationSafeguard SKIPPED
+:app:preM360DebugUnitTestBuild SKIPPED
+:app:prepareM360DebugUnitTestDependencies SKIPPED
+:app:compileM360DebugUnitTestJavaWithJavac SKIPPED
+:app:processM360DebugUnitTestJavaRes SKIPPED
+:app:compileM360DebugUnitTestSources SKIPPED
+:app:assembleM360DebugUnitTest SKIPPED
+:app:testM360DebugUnitTest SKIPPED
+:app:incrementalM360ReleaseUnitTestJavaCompilationSafeguard SKIPPED
+:app:preM360ReleaseUnitTestBuild SKIPPED
+:app:prepareM360ReleaseUnitTestDependencies SKIPPED
+:app:compileM360ReleaseUnitTestJavaWithJavac SKIPPED
+:app:processM360ReleaseUnitTestJavaRes SKIPPED
+:app:compileM360ReleaseUnitTestSources SKIPPED
+:app:assembleM360ReleaseUnitTest SKIPPED
+:app:testM360ReleaseUnitTest SKIPPED
+:app:test UP-TO-DATE
+:app:check UP-TO-DATE
+:app:build
 :plugin:compileJava UP-TO-DATE
 :plugin:compileGroovy
 :plugin:processResources
 :plugin:classes
 :plugin:jar
-:plugin:MultiChannelJavadoc UP-TO-DATE
-:plugin:javadocJar
-:plugin:sourcesJar
 :plugin:assemble
 :plugin:compileTestJava UP-TO-DATE
 :plugin:compileTestGroovy UP-TO-DATE
@@ -16,8 +480,7 @@ Incremental java compilation is an incubating feature.
 :plugin:test UP-TO-DATE
 :plugin:check UP-TO-DATE
 :plugin:build
-:plugin:bintrayUpload
 
 BUILD SUCCESSFUL
 
-Total time: 8.463 secs
+Total time: 19.353 secs
