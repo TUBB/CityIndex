@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.tubb.multichannel'
+apply plugin: 'io.github.tubb.multichannel'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.tubb.cityindex"
-        minSdkVersion 10
-        targetSdkVersion 25
+        minSdkVersion 15
+        targetSdkVersion 27
         versionCode 3
         versionName "4.0.0"
     }
@@ -28,8 +28,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "default"
     productFlavors {
         develop {
+            dimension 'default'
             manifestPlaceholders = [ channel:"develop" ]
         }
     }
@@ -38,30 +40,42 @@ android {
     }
 }
 
-taskmanage {
-    disableDebugTask true
-    disableLintTask true
-    disableTestTask true
-}
-
-appchannel {
-    channelFilePath 'app/build-types/channels.txt'
-    buildProductFlavor { name ->
-        return {
-            manifestPlaceholders = [ channel:name ]
-            signingConfig android.buildTypes.release.signingConfig
+appChannel {
+    channelFlavorConfig {
+        channelConfigFilePath "${project.getProjectDir()}/channels.txt"
+        configProductFlavor { name ->
+            if ('qq'.equals(name)) { // for test
+                return {
+                    dimension 'default'
+                    manifestPlaceholders = [ channel:"${name}_yyb" ]
+                }
+            } else {
+                return {
+                    dimension 'default'
+                    manifestPlaceholders = [ channel:name ]
+                }
+            }
+        }
+        // must call after configProductFlavor dsl
+        createChannel()
+    }
+    bundleOutputConfig {
+        outputDir "${project.getProjectDir()}/channels"
+        renameBundleFile { project, variant ->
+            // rename apk file
+            project.name + '-' + variant.flavorName + '-' + variant.buildType.name + '-' + variant.versionName + '.apk'
         }
     }
-    outputDir 'publish'
-    buildOutputFileName { project, variant ->
-        project.name + '-' + variant.flavorName + '-' + variant.buildType.name + '-' + variant.versionName + '.apk'
+    taskConfig {
+        disableLintTask true
+        disableDebugTask true
+        disableTestTask true
     }
-    buildChannel(project)
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
 }
 
 

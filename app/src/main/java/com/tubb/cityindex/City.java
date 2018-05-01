@@ -1,6 +1,8 @@
 package com.tubb.cityindex;
 
-public class City implements Comparable{
+import android.support.annotation.NonNull;
+
+public class City implements Comparable<City> {
 
     private String id;
     private String name;
@@ -22,11 +24,10 @@ public class City implements Comparable{
     }
 
     @Override
-    public int compareTo(Object another) {
-        if(another == null || !(another instanceof City)){
+    public int compareTo(@NonNull City another) {
+        if(another == null){
             return -1;
         }
-        City other = (City)another;
-        return id.compareTo(other.getId());
+        return id.compareTo(another.getId());
     }
 }
